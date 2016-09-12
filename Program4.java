@@ -74,6 +74,7 @@ public class Program4 {
     					data[i][j] = Integer.parseInt(temp);
     				}
     			}
+    			System.out.println("Marks Of Students\n");
     			for(int i = 0; i < rows; i++){
     				for(int j = 0; j < col; j++){
     					System.out.print(data[i][j] + " ");
