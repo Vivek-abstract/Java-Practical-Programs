@@ -2,7 +2,7 @@
  * @(#)Program 5.java
  *
  *
- * @author 
+ * @author
  * @version 1.00 2016/8/24
  */
 
@@ -44,13 +44,8 @@ public class Program5{
 		System.out.println(str);
 	}
 	public static void remove_spaces(String str){
-		str = str.trim();
-		for(int i = 0; i < str.length(); i++){
-			if(str.charAt(i) == ' '){
-				str = str.substring(0,i) + str.substring(i+1);
-				i--;
-			}
-		}
+		str = str.replaceAll(" ","");
+		str = str.replaceAll("\t","");
 		System.out.println(str);
 	}
 	public static void count(String str){
